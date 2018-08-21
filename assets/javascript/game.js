@@ -59,7 +59,7 @@ window.onload = function () {
         guess.innerHTML = "_ ";
       }
 
-      guesses.push(guess);
+      geusses.push(guess);
       wordHolder.appendChild(correct);
       correct.appendChild(guess);
     }
@@ -69,11 +69,11 @@ window.onload = function () {
    comments = function () {
     showLives.innerHTML = "You have " + lives + " lives";
     if (lives < 1) {
-      showLives.innerHTML = "No Donut :( ";
+      showLives.innerHTML = "Game Over";
     }
-    for (var i = 0; i < guesses.length; i++) {
-      if (counter + space === guesses.length) {
-        showLives.innerHTML = "You Win a Donut!";
+    for (var i = 0; i < geusses.length; i++) {
+      if (counter + space === geusses.length) {
+        showLives.innerHTML = "You Win!";
       }
     }
   }
@@ -115,7 +115,7 @@ window.onload = function () {
     buttons();
 
     guesses = [ ];
-    lives = 8;
+    lives = 10;
     counter = 0;
     space = 0;
     result();
