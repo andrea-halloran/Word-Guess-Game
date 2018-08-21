@@ -1,0 +1,43 @@
+.jumbotron{ 
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;  
+    background-color: white; 
+}
+
+.inner-container{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center; 
+    font-size: 20px; 
+   
+}
+
+para{ 
+    font-size: 22px;
+    display: inline; 
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+ }
+
+#buttons{
+    letter-spacing: 30px; 
+    text-align: center;
+    display: inline; 
+}
+
+p { 
+    font-size: 22px;
+    display: inline; 
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+hold{
+    display: inline;
+
+}
+
+.btn-outline-dark{
+    font-family: 'Press Start 2P', cursive;
+    color: black; 
+}
+
