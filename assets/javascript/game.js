@@ -39,7 +39,7 @@ window.onload = function () {
     if (chosenCategory === categories[0]) {
       catagoryName.innerHTML = "Types of Donuts";
     } else if (chosenCategory === categories[1]) {
-      
+
     }
   }
 
@@ -59,7 +59,7 @@ window.onload = function () {
         guess.innerHTML = "_ ";
       }
 
-      geusses.push(guess);
+      guesses.push(guess);
       wordHolder.appendChild(correct);
       correct.appendChild(guess);
     }
@@ -69,11 +69,11 @@ window.onload = function () {
    comments = function () {
     showLives.innerHTML = "You have " + lives + " lives";
     if (lives < 1) {
-      showLives.innerHTML = "Game Over";
+      showLives.innerHTML = "No Donut :( ";
     }
-    for (var i = 0; i < geusses.length; i++) {
-      if (counter + space === geusses.length) {
-        showLives.innerHTML = "You Win!";
+    for (var i = 0; i < guesses.length; i++) {
+      if (counter + space === guesses.length) {
+        showLives.innerHTML = "You Win a Donut!";
       }
     }
   }
@@ -115,7 +115,7 @@ window.onload = function () {
     buttons();
 
     guesses = [ ];
-    lives = 10;
+    lives = 8;
     counter = 0;
     space = 0;
     result();
@@ -126,9 +126,7 @@ window.onload = function () {
 
   play();
   
-  function refreshPage(){
-    window.location.reload();
-} 
+
   document.getElementById("reset").onclick = function() {
     location.reload(); 
     play();
